@@ -80,6 +80,8 @@ class Solus {
       const x = this.currentHeart.x / this.canvas.width, y = this.currentHeart.y / this.canvas.height
 
       this.ws.send(JSON.stringify({ x, y, dy: this.currentHeart.dy }))
+
+      this.currentHeart.dy = Number(Math.random().toFixed(1)) * 5 + 0.1
     }
   }
 

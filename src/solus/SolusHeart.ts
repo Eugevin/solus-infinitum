@@ -6,7 +6,7 @@ class SolusHeart {
   created: boolean = false
   size: number = 0
   alpha: number = 0
-  dy: number = Number(Math.random().toFixed(1)) * 10 + 0.1
+  dy: number = Number(Math.random().toFixed(1)) * 5 + 0.1
 
   constructor(canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D) {
     this.canvas = canvas
