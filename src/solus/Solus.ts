@@ -45,7 +45,7 @@ class Solus {
     this.drawHearts()
     this.drawCurrentHeart()
 
-    this.prev = performance.now()
+    this.prev = this.current - ((this.current - this.prev) % (1000 / 60))
   }
 
   drawHearts(): void {
